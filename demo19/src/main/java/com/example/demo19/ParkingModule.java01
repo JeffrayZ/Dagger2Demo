@@ -1,0 +1,18 @@
+package com.example.demo19;
+
+import dagger.Module;
+import dagger.Provides;
+
+/**
+ *
+ */
+@Module
+public class ParkingModule {
+    public ParkingModule() {
+    }
+
+    @Provides
+    public String provideDriver() {
+        return "隔壁老王";
+    }
+}

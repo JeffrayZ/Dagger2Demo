@@ -1,0 +1,14 @@
+package com.example.demo22.child;
+
+import com.example.demo22.ChildActivity;
+import com.example.demo22.father.FatherComponent;
+
+import dagger.Component;
+
+/**
+ * 子依赖于父
+ */
+@Component(modules = ChildModule.class, dependencies = FatherComponent.class)
+public interface ChildComponent {
+    void inject(ChildActivity activity);
+}

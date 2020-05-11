@@ -1,0 +1,11 @@
+package com.example.demo22.father;
+
+import dagger.Component;
+
+/**
+ *
+ */
+@Component(modules = FatherModule.class)
+public interface FatherComponent {
+    Father offerFather();
+}
